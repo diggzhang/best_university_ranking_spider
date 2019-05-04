@@ -15,3 +15,8 @@ python best_university_ranking_spider.py
 ```
 
 代码执行完成后，会在当前目录下产生一个`result.xlsx`文件。
+
+
+### 结构
+
+![](./dia.png)
