@@ -62,7 +62,7 @@ def best_university_ranking_specialized_processor(tables, result_file):
     table_df[0].to_excel(result_file)
 
 
-def extract_url(target_url):
+def web_content(target_url):
     """
     将传入的target_url用RequestWebPageUtil类中封装的request方法请求并返回页面内容
     :param target_url: 一个有效的URL地址，默认是全局变量中的TARGET_URL
@@ -87,7 +87,7 @@ def best_university_ranking(web_content, selector_path, result_file):
 
 def main():
     best_university_ranking(
-        extract_url(TARGET_URL), SELECTOR_PATH, 'result.xlsx'
+        web_content(TARGET_URL), SELECTOR_PATH, 'result.xlsx'
     )
 
 
