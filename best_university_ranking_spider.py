@@ -21,7 +21,7 @@ class RequestWebPageUtil:
     def current_url(self):
         print("[*] Current target url:", self.url)
 
-    def requests_url(self):
+    def requests_web_content(self):
         """
         :return: self.web_content - 由requests get到的页面html内容
         """
@@ -69,7 +69,7 @@ def web_content(target_url):
     :return: 返回target_url的页面内容html
     """
     web_content = RequestWebPageUtil(target_url)
-    web_content.requests_url()
+    web_content.requests_web_content()
     return web_content
 
 
